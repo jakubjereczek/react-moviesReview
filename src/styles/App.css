@@ -1,0 +1,20 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.logo {
+  margin-top: 10px;
+  font-size: 40px;
+  color: #000;
+}
+
+html {
+  background: linear-gradient(to bottom, #ecdff7, #fff);
+  background-repeat: no-repeat;
+}
+
+.containter {
+  width: 600px;
+  padding: 10px;
+}

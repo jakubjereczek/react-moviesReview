@@ -1,0 +1,63 @@
+.box {
+    height: auto;
+    width: 95%
+}
+
+.result {
+    width: 75%;
+    display: inline-block;
+    height: auto;
+    text-align: left;
+    font-size: 14px;
+}
+
+.image {
+    display: inline-block;
+    width: 25%;  
+}
+
+.result h2.name {
+    letter-spacing: 1px;
+    font-size: 12px;
+    margin: 10px 0px;
+}
+
+.result span.data {
+    color: #af84dc;
+}
+
+.image img {
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.image .favMovie {
+    background: #fff;  
+    font-size: 12px;
+    height: 30px;   
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin: 5px 0px;
+    padding: 15px 10px;  
+    line-height: 2px;
+    transition: .3s;
+}
+
+
+.image .favMovie:hover {
+    background: #af84dc;
+    color: #fff;
+}
+
+.icon {
+    height: 50px;
+    width: 40px;
+    border: 1px solid #000;
+    float: left;
+    margin-right: 10px;
+}
+
+.rating {
+    margin-left: 10px;
+}
