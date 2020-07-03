@@ -35,7 +35,7 @@ class SearchMovie extends Component {
         if (this.state.value.length === 0) {
             return;
         }
-        if (this.state.value === this.state.movie.title || this.state.isFinded) {
+        if ((this.state.value === this.state.movie.title) || this.state.isFinded) {
             return;
         }
         this.getDate();
@@ -43,7 +43,7 @@ class SearchMovie extends Component {
 
     getDate = () => {
         const key = '1c584fe2';
-        const API = `http://www.omdbapi.com/?t=${this.state.value}&apikey=${key}`;
+        const API = `https://www.omdbapi.com/?t=${this.state.value}&apikey=${key}`;
 
         fetch(API)
             .then(response => {
