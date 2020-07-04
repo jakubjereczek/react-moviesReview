@@ -1,0 +1,30 @@
+.info {
+    background: #fff;
+    min-height: 150px;
+    padding-bottom: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 5px;
+    border-radius: 5px;
+}
+
+.info h2 {
+    letter-spacing: 1px;
+    padding: 20px;
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.info div.text {
+    width: 50%;
+    display: inline-block;
+
+}
+.info img.box-photo {
+    width: 50%;
+    display: inline-block;
+}
+
+.info div.text span {
+    color: #af84dc;
+}

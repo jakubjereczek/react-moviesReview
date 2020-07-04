@@ -14,5 +14,5 @@ React framework,
 JavaScript (ES6)
 CSS
 
-## Screenshot
-![View](./images/screenshot.png)
+## Screenshot 
+![View](./images/example.gif)

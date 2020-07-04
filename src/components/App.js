@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import '../styles/App.css';
-import SearchMovie from './SeachMovie'
-import FavouritesList from './FavouritesList'
+import Page from './Page'
+
 
 
 class App extends Component {
@@ -24,10 +25,20 @@ class App extends Component {
 
   addMovie = (movie) => {
     const movies = [...this.state.movies];
-    movies.push(movie);
-    this.setState({
-      movies
+
+    let same = false;
+    movies.forEach(m => {
+      if (m.id === movie.id) {
+        same = true;
+      }
     })
+
+    if (!same) {
+      movies.push(movie);
+      this.setState({
+        movies
+      })
+    }
   }
 
   deleteMovie = (id) => {
@@ -41,11 +52,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className="containter">
-        <h2 className="logo">MovieReviews</h2>
-        <SearchMovie fAdd={this.addMovie} />
-        <FavouritesList movies={this.state.movies} fDel={this.deleteMovie} />
-      </div>
+      <Router basename={process.env.PUBLIC_URL}>
+        <div className="containter">
+          <h2 className="logo">MovieReviews</h2>
+          <Page fAdd={this.addMovie} fDel={this.deleteMovie} movies={this.state.movies} />
+        </div>
+      </Router>
     );
   }
 }
