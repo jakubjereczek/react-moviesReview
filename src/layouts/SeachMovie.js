@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Result from './Result';
+import Result from '../components/Result';
 import '../styles/SearchMovie.css';
 import defaultPoster from '../images/default_poster.png';
 
