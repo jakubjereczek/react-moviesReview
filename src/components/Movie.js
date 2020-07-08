@@ -6,7 +6,7 @@ const Movie = (props) => {
     const { id, title, genre, released, year, awards, plot, rating, type, poster } = props;
 
     return (
-        <li><img className="icon" alt="icon" src={poster} /> {title} <p className="type"> {type} ({genre})</p> <span className="rating">⭐ {rating}/10</span><NavLink className="link" to={`/mov/${id}`} movie={props}>info</NavLink><button onClick={() => props.fDel(id)}>X</button></li >
+        <li><img className="icon" alt="icon" src={poster} /> {title} <p className="type"> {type} ({genre})</p> <span className="rating">⭐ {rating}/10</span><NavLink className="link" to={`/mov/${id}`} movie={props}>?</NavLink><button onClick={() => props.fDel(id)}>X</button></li >
     );
 }
 

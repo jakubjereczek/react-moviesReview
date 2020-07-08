@@ -10,7 +10,7 @@ const FavouritesList = (props) => {
         <div class="fav">
             <h2>Lista wybranych filmów (ulubione) <span class="counter">{movies.length}</span></h2>
             <ul>
-                {movies.length > 0 ? movies : "Brak ulubionych"}
+                {movies.length > 0 ? movies.reverse() : "Brak ulubionych"}
             </ul>
         </div>
     );
