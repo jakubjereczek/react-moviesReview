@@ -29,3 +29,11 @@
 .info div.text span {
     color: #af84dc;
 }
+
+@media (max-width: 1024px) {
+    .info div.text, .info img.box-photo {
+        display: block;
+        width: 100%;
+    }
+    
+}
